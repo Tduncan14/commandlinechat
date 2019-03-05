@@ -1,0 +1,30 @@
+{
+  "name": "commandlinechat",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tduncan14/commandlinechat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tduncan14/commandlinechat/issues"
+  },
+  "homepage": "https://github.com/Tduncan14/commandlinechat#readme",
+  "dependencies": {
+    "@pusher/chatkit-server": "^1.0.6",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "prompt": "^1.0.0",
+    "util": "^0.11.1"
+  }
+}
