@@ -2,7 +2,27 @@ const util =require('util');
 const prompt = require('prompt');
 const axios = require('axios');
 
+
+const createUser = async(username) =>{
+
+try{ await axios.post('http://localhost:3001/users',{
+      username
+   })
+}
+  catch(error){
+     console.error(error);
+    }
+ 
+
+}
+
+
+
+
+
+
 const main = async () =>{
+
    prompt.start()
    prompt.message='';
 
@@ -16,7 +36,7 @@ const main = async () =>{
        }];
    
        const {username} = await get(usernameSchema);
-       console.log(username);
+       await createUser(username);
  
 
    }
